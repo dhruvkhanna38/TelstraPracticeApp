@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tesltra Practice App</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="remember_password">Remember Password</string>
+    <string name="login">Login</string>
+    <string name="cancel">Cancel</string>
+</resources>
