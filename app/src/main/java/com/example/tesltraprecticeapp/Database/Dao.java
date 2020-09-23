@@ -14,8 +14,6 @@ public class Dao {
         helper = new FeedReaderDbHelper(context);
     }
 
-
-
     public  void openDb(){
         database = helper.getWritableDatabase();
     }

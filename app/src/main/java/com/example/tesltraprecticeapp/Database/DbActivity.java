@@ -3,6 +3,7 @@ package com.example.tesltraprecticeapp.Database;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,7 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.tesltraprecticeapp.R;
 
 public class DbActivity extends AppCompatActivity {
-    EditText titleET, subTitleET, textViewdb;
+    EditText titleET, subTitleET;
+    ListView dbListView;
     Dao dao;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,8 @@ public class DbActivity extends AppCompatActivity {
         String title = titleET.getText().toString();
         String subTitle = subTitleET.getText().toString();
         dao.createRow(title, subTitle);
+         /*Note note = new Note(title,subtitle);
+        dao.createRow(note);*/
     }
 
     private void getDb() {

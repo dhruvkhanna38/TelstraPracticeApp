@@ -20,30 +20,18 @@ public class FeedReaderDbHelper extends SQLiteOpenHelper {
             "DROP TABLE IF EXISTS " + FeedEntry.TABLE_NAME;
 
 
-    /**c
-     * constructor
-     * @param context
-     */
+
     public FeedReaderDbHelper(@Nullable Context context) {
         super(context, "dbname", null, 1);
     }
 
-    /**
-     * this method helps in creating a table
-     * @param db
-     */
+
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(SQL_CREATE_ENTRIES); //table would be created
     }
 
-    /**
-     * when we upgrade our app and db [if we add or remove cols from table]
-     * this method
-     * @param db
-     * @param oldVersion
-     * @param newVersion
-     */
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
